@@ -1,0 +1,133 @@
+.flexContainer{
+    display: flex;
+    flex-wrap: wrap;   
+    row-gap: 60px;
+  }
+
+h3{
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.titel{
+    font-family: 'Ars_light_Serif';
+}
+
+.titelKeuze{
+    font-family: 'Ars_light_Serif';
+    font-size: 2rem;
+    margin-top: 20px
+}
+
+.inleiding{   
+    font-family: 'Ars_regular_Serif';
+    font-size: 1.5rem;
+}
+
+.tekst{
+    font-family: 'Ars_regular_Serif';
+    font-size: 1.2rem;
+}
+
+.wrapper{
+    display: flex;
+}
+
+@media screen and (max-width: 768px) {
+    .wrapper div {
+        width: 100%;
+        
+    }
+  }
+
+.card-container{
+    margin-top: 20px;
+    color: black;
+    text-align: right;
+    border: 1px solid black;
+    cursor: pointer;
+    width: 25%;
+    
+}
+
+.card-container2{
+    margin-top: 20px;
+    color: black;
+    text-align: right;
+    border: 1px solid black;
+    cursor: pointer;
+    margin-left: 50px;
+    width: 25%;    
+}
+
+@media screen and (max-width: 768px) {
+    .card-container2 {
+        margin-left: 30px;       
+    }
+  }
+
+img{
+    max-width: 100%;   
+}
+
+.keuze {
+    background-color: #FFEE99;
+    padding: 10px;
+    text-align: center;
+}
+
+.button {
+    border: 1px solid black;
+    color: black;
+    background-color: #FFEE99;
+    padding: 10px 20px;
+    text-align: center;
+    display:block;
+    font-size: 16px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-family: 'Ars_regular_Serif';
+  }
+
+.vraagContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.buttonContainer{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    
+}
+
+@media screen and (max-width: 768px) {
+    .vraagContainer {
+      justify-content: flex-end;
+    }
+  }
+
+@media screen and (max-width: 768px) {
+    .buttonContainer {
+      justify-content: flex-end;
+    }
+  }
+
+@media screen and (max-width: 768px) {
+    .inleiding {
+      font-size: 1rem;
+    }
+  }
+
+@media screen and (max-width: 768px) {
+    .inleiding {
+      font-size: 1rem;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .tekst {
+      font-size: 0.9rem;
+    }
+  }

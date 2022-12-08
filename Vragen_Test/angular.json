@@ -3,7 +3,7 @@
   "version": 1, 
   "newProjectRoot": "projects",
   "projects": {
-    "Armoede-Test": {
+    "Vragen_Test": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/Armoede-Test",
+            "outputPath": "dist/Vragen_Test",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -62,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "Armoede-Test:build"
+            "browserTarget": "Vragen_Test:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "Armoede-Test:build:production"
+              "browserTarget": "Vragen_Test:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Armoede-Test:build"
+            "browserTarget": "Vragen_Test:build"
           }
         },
         "test": {
@@ -110,15 +110,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "Armoede-Test:serve"
+            "devServerTarget": "Vragen_Test:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "Armoede-Test:serve:production"
+              "devServerTarget": "Vragen_Test:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "Armoede-Test"
+  "defaultProject": "Vragen_Test"
 }

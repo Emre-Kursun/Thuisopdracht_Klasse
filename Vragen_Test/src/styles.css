@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+*{ 
+    padding: 0;
+    margin: 0;
+ }
+
+@font-face {
+  font-family: 'Ars_regular';
+  src: url('/assets/font/webfonts/webfonts/ars-maquette-pro-regular/ARSMaquettePro-Regular.woff') format('woff')
+  }
+
+  @font-face {
+    font-family: 'Ars_bold';
+    src: url('/assets/font/webfonts/webfonts/ars-maquette-pro-bold/ARSMaquettePro-Bold.woff') format('woff')
+    }
+
+    @font-face {
+        font-family: 'Ars_light_Serif';
+        src: url('/assets/font/webfonts/webfonts/fa-serif-light/FlandersArtSerif-Light.woff') format('woff')
+        }
+
+        @font-face {
+            font-family: 'Ars_regular_Serif';
+            src: url('/assets/font/webfonts/webfonts/fa-serif-regular/FlandersArtSerif-Regular.woff') format('woff')
+            }    
