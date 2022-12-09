@@ -1,133 +1,202 @@
-.flexContainer{
-    display: flex;
-    flex-wrap: wrap;   
-    row-gap: 60px;
+@keyframes questionAppear {
+  0% {
+    opacity: 0;
   }
 
-h3{
-    margin-top: 5px;
-    margin-right: 10px;
+  66% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
-.titel{
-    font-family: 'Ars_light_Serif';
+.flexContainer {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 60px;
 }
 
-.titelKeuze{
-    font-family: 'Ars_light_Serif';
-    font-size: 2rem;
-    margin-top: 20px
+h3 {
+  margin-top: 5px;
+  margin-right: 10px;
 }
 
-.inleiding{   
-    font-family: 'Ars_regular_Serif';
-    font-size: 1.5rem;
+.titel {
+  font-family: 'Ars_light_Serif';
 }
 
-.tekst{
-    font-family: 'Ars_regular_Serif';
-    font-size: 1.2rem;
+.titelKeuze {
+  font-family: 'Ars_light_Serif';
+  font-size: 2rem;
+  margin-top: 20px
 }
 
-.wrapper{
-    display: flex;
+.inleiding {
+  font-family: 'Ars_regular_Serif';
+  font-size: 1.5rem;
+}
+
+.tekst {
+  font-family: 'Ars_regular_Serif';
+  font-size: 1.2rem;
+}
+
+.wrapper {
+  display: inline-flex;
 }
 
 @media screen and (max-width: 768px) {
-    .wrapper div {
-        width: 100%;
-        
-    }
+  .wrapper div {
+    width: 100%;
   }
-
-.card-container{
-    margin-top: 20px;
-    color: black;
-    text-align: right;
-    border: 1px solid black;
-    cursor: pointer;
-    width: 25%;
-    
 }
 
-.card-container2{
-    margin-top: 20px;
-    color: black;
-    text-align: right;
-    border: 1px solid black;
-    cursor: pointer;
-    margin-left: 50px;
-    width: 25%;    
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .wrapper div {
+    width: 100%;
+  }
+
+  .vraagContainer {
+    justify-content: flex-end !important;
+    margin-right: 3%;
+  }
+
+  .buttonContainer {
+    justify-content: flex-end !important;
+    margin-right: 3%;
+  }
+}
+
+.card-container {
+  margin-top: 20px;
+  margin-right: 3.5%;
+  color: black;
+  text-align: right;
+  border: 1px solid black;
+  cursor: pointer;
+  width: 25%;
+  -webkit-animation: 0.5s ease 0s normal forwards 1 questionAppear;
+
+}
+
+
+.card-container2 {
+  margin-top: 20px;
+  color: black;
+  text-align: right;
+  border: 1px solid black;
+  cursor: pointer;
+  margin-left: 50px;
+  width: 25%;
+
 }
 
 @media screen and (max-width: 768px) {
-    .card-container2 {
-        margin-left: 30px;       
-    }
+  .card-container2 {
+    margin-left: 30px;
   }
+}
 
-img{
-    max-width: 100%;   
+img {
+  max-width: 100%;
 }
 
 .keuze {
-    background-color: #FFEE99;
-    padding: 10px;
-    text-align: center;
+  background-color: #FFEE99;
+  padding: 10px;
+  text-align: center;
 }
+
 
 .button {
-    border: 1px solid black;
-    color: black;
-    background-color: #FFEE99;
-    padding: 10px 20px;
-    text-align: center;
-    display:block;
-    font-size: 16px;
-    margin-top: 15px;
-    cursor: pointer;
-    font-family: 'Ars_regular_Serif';
-  }
-
-.vraagContainer{
-    display: flex;
-    justify-content: center;
-    margin-top: 15px;
+  border: 1px solid black;
+  color: black;
+  background-color: #FFEE99;
+  padding: 10px 20px;
+  text-align: center;
+  display: block;
+  font-size: 16px;
+  margin-top: 15px;
+  cursor: pointer;
+  font-family: 'Ars_regular_Serif';
 }
 
-.buttonContainer{
-    display: flex;
-    justify-content: center;
-    padding-bottom: 20px;
-    
+button:disabled{
+    opacity: 0.3;
+  }
+
+.button2 {
+  background-color: #FAFAFA;
+  margin-right: 20px;
+}
+
+.vraagContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
 }
 
 @media screen and (max-width: 768px) {
-    .vraagContainer {
-      justify-content: flex-end;
-    }
+  .vraagContainer {
+    margin-right: 3%;
+    justify-content: flex-end;
   }
+}
+
+
+.buttonContainer {
+  display: flex;
+  justify-content: flex-end;
+  max-width: 53.7%;
+  padding-bottom: 20px;
+
+}
 
 @media screen and (max-width: 768px) {
-    .buttonContainer {
-      justify-content: flex-end;
-    }
+  .buttonContainer {
+    margin-right: 3%;
+    justify-content: flex-end;
   }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.active {
+  border: 3px solid #FFD400;
+  transition: all 0.3s;
+}
 
 @media screen and (max-width: 768px) {
-    .inleiding {
-      font-size: 1rem;
-    }
+  .vraagContainer {
+    justify-content: flex-end;
   }
+}
 
 @media screen and (max-width: 768px) {
-    .inleiding {
-      font-size: 1rem;
-    }
+  .buttonContainer {
+    justify-content: flex-end;
   }
+}
 
-  @media screen and (max-width: 768px) {
-    .tekst {
-      font-size: 0.9rem;
-    }
+@media screen and (max-width: 768px) {
+  .inleiding {
+    font-size: 1rem;
   }
+}
+
+@media screen and (max-width: 768px) {
+  .inleiding {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .tekst {
+    font-size: 0.9rem;
+  }
+}
