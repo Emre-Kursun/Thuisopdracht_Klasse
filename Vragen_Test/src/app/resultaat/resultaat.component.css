@@ -1,0 +1,88 @@
+  .flexContainer {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 60px;
+  }
+  
+  h3 {
+    margin-top: 5px;
+    margin-right: 10px;
+  }
+  
+  .titel {
+    font-family: 'Ars_light_Serif';
+  }
+  
+  .titelKeuze {
+    font-family: 'Ars_light_Serif';
+    font-size: 2rem;
+    margin-top: 20px
+  }
+  
+  .inleiding {
+    font-family: 'Ars_regular_Serif';
+    font-size: 1.5rem;
+  }
+  
+  .wrapper {
+    display: inline-flex;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .wrapper div {
+      width: 100%;
+    }
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .wrapper div {
+      width: 100%;
+    }
+  }
+  
+  .keuze {
+    background-color: #FFEE99;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .active {
+    border: 3px solid #FFD400;
+    transition: all 0.3s;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .vraagContainer {
+      justify-content: flex-end;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .buttonContainer {
+      justify-content: flex-end;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .inleiding {
+      font-size: 1rem;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .inleiding {
+      font-size: 1rem;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .tekst {
+      font-size: 0.9rem;
+    }
+  }
+  

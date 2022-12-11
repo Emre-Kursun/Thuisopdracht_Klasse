@@ -23,3 +23,8 @@
             font-family: 'Ars_regular_Serif';
             src: url('/assets/font/webfonts/webfonts/fa-serif-regular/FlandersArtSerif-Regular.woff') format('woff')
             }    
+
+            @font-face {
+                font-family: 'Ars_regular_Italic';
+                src: url('/assets/font/webfonts/webfonts/ars-maquette-pro-italic/ARSMaquettePro-Italic.woff') format('woff')
+                }    

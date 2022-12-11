@@ -4,14 +4,14 @@
             "options": [{
                     "id":1,
                     "text": "Drie maaltijden per dag",
-                    "price": "€360",
+                    "price": 360,
                     "image": "/assets/Vraag01_3maaltijden.png"
                     
                 },
                 {
                     "id":2,
                     "text": "Twee maaltijden per dag",
-                    "price": "€240",
+                    "price": 240,
                     "image": "/assets/Vraag01_2maaltijden.png"
                 }
             ]
@@ -22,13 +22,13 @@
             "options": [{
                     "id":3,
                     "text": "De verwarming aanzetten",
-                    "price": "€5",
+                    "price": 50,
                     "image": "/assets/Vraag01_3maaltijden.png"
                 },
                 {
                     "id":4,
                     "text": "Een extra trui aandoen in huis",
-                    "price": "€0,10",
+                    "price": 0.10,
                     "image": "/assets/Vraag01_2maaltijden.png"
                 }
             ]
@@ -39,13 +39,13 @@
             "options": [{
                     "id":5,
                     "text": "Een betalende uitstap",
-                    "price": "€10",
+                    "price": 10,
                     "image": "/assets/Vraag01_3maaltijden.png"
                 },
                 {
                     "id":6,
                     "text": "Uitstap naar de speeltuin",
-                    "price": "€0",
+                    "price": 0,
                     "image": "/assets/Vraag01_2maaltijden.png"
                 }
             ]
@@ -56,13 +56,13 @@
             "options": [{
                     "id":7,
                     "text": "Naar de dierentuin",
-                    "price": "€11",
+                    "price": 11,
                     "image": "/assets/Vraag01_3maaltijden.png"
                 },
                 {
                     "id":8,
                     "text": "Kinderboerderij in de buurt",
-                    "price": "€0",
+                    "price": 0,
                     "image": "/assets/Vraag01_2maaltijden.png"
                 }
             ]
@@ -73,13 +73,13 @@
             "options": [{
                     "id":9,
                     "text": "Speelgoed bij sint, verjaardag en kerst",
-                    "price": "€10",
+                    "price": 10,
                     "image": "/assets/Vraag01_3maaltijden.png"
                 },
                 {
                     "id":10,
                     "text": "Alleen speelgoed bij verjaardag",
-                    "price": "€3,30",
+                    "price": 3.30,
                     "image": "/assets/Vraag01_2maaltijden.png"
                 }
             ]
@@ -90,13 +90,13 @@
             "options": [{
                     "id":11,
                     "text": "Internet thuis",
-                    "price": "€28",
+                    "price": 28,
                     "image": "/assets/Vraag01_3maaltijden.png"
                 },
                 {
                     "id":12,
                     "text": "Gratis openbaar wifi",
-                    "price": "€0",
+                    "price": 0,
                     "image": "/assets/Vraag01_2maaltijden.png"
                 }
             ]
@@ -107,13 +107,13 @@
             "options": [{
                     "id":13,
                     "text": "Een eigen auto",
-                    "price": "€330",
+                    "price": 330,
                     "image": "/assets/Vraag01_3maaltijden.png"
                 },
                 {
                     "id":14,
                     "text": "Openbaar vervoer",
-                    "price": "€23",
+                    "price": 23,
                     "image": "/assets/Vraag01_2maaltijden.png"
                 }
             ]
@@ -124,13 +124,13 @@
             "options": [{
                     "id":15,
                     "text": "Oudste kind mee op bosklassen",
-                    "price": "€10",
+                    "price": 10,
                     "image": "/assets/Vraag01_3maaltijden.png"
                 },
                 {
                     "id":16,
                     "text": "Vervangprogramma op school",
-                    "price": "€0,80",
+                    "price": 0.80,
                     "image": "/assets/Vraag01_2maaltijden.png"
                 }
             ]
@@ -140,14 +140,14 @@
             "questionText": "9/12",
             "options": [{
                     "id":17,
-                    "text": "DNieuwe kleren en schoenen",
-                    "price": "€140",
+                    "text": "Nieuwe kleren en schoenen",
+                    "price": 140,
                     "image": "/assets/Vraag01_3maaltijden.png"
                 },
                 {
                     "id":18,
                     "text": "Kleren uit de kringloopwinkel",
-                    "price": "€50",
+                    "price": 50,
                     "image": "/assets/Vraag01_2maaltijden.png"
                 }
             ]
@@ -158,13 +158,13 @@
             "options": [{
                     "id":19,
                     "text": "Sportclub voor de kinderen",
-                    "price": "€13",
+                    "price": 13,
                     "image": "/assets/Vraag01_3maaltijden.png"
                 },
                 {
                     "id":20,
                     "text": "Voetballen in het park",
-                    "price": "€0,40",
+                    "price": 0.40,
                     "image": "/assets/Vraag01_2maaltijden.png"
                 }
             ]
@@ -175,13 +175,13 @@
             "options": [{
                     "id":21,
                     "text": "Spelconsole",
-                    "price": "€5",
+                    "price": 5,
                     "image": "/assets/Vraag01_3maaltijden.png"
                 },
                 {
                     "id":22,
                     "text": "Gezelschapsspel",
-                    "price": "€2",
+                    "price": 2,
                     "image": "/assets/Vraag01_2maaltijden.png"
                 }
             ]
@@ -192,13 +192,13 @@
             "options": [{
                     "id":23,
                     "text": "Naar de bioscoop",
-                    "price": "€40",
+                    "price": 40,
                     "image": "/assets/Vraag01_3maaltijden.png"
                 },
                 {
                     "id":24,
                     "text": "Een film huren in bib",
-                    "price": "€3",
+                    "price": 3,
                     "image": "/assets/Vraag01_2maaltijden.png"
                 }
             ]

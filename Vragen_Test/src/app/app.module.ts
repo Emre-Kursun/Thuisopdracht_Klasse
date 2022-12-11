@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { VragenComponent } from './vragen/vragen.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ResultaatComponent } from './resultaat/resultaat.component';
+import { CommonModule } from '@angular/common';
+
 
 @NgModule({
   declarations: [
@@ -16,9 +18,10 @@ import { ResultaatComponent } from './resultaat/resultaat.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    CommonModule
   ],
-  providers: [],
+  providers: [VragenComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

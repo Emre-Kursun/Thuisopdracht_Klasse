@@ -136,7 +136,15 @@ button:disabled{
   display: flex;
   justify-content: center;
   margin-top: 15px;
+  margin-right: 9px;
 }
+
+@media screen and (min-width: 768px)  and (max-width: 1024px) {
+    .vraagContainer {
+      margin-right: 3%;
+     
+    }
+  }
 
 @media screen and (max-width: 768px) {
   .vraagContainer {
@@ -149,10 +157,21 @@ button:disabled{
 .buttonContainer {
   display: flex;
   justify-content: flex-end;
-  max-width: 53.7%;
   padding-bottom: 20px;
 
 }
+
+@media screen and (min-width: 1440px) {
+    .buttonContainer {
+      margin-right: 46.5%;
+    }
+  }
+
+  @media screen and (min-width: 1025px) and (max-width: 1440px) {
+    .buttonContainer {
+      margin-right: 46.5%;
+    }
+  }
 
 @media screen and (max-width: 768px) {
   .buttonContainer {
@@ -170,6 +189,158 @@ a {
   border: 3px solid #FFD400;
   transition: all 0.3s;
 }
+
+.wrapperKeuze{
+    margin-top: 25px;
+}
+
+.finaleNaam{
+    font-weight: bold;
+    display: inline-block;
+}
+
+.finalePrijs{
+    font-weight: bold;
+    display: inline-block;
+}
+
+.finaleKeuze{
+    font-family: 'Ars_regular_Serif';
+    max-width: 60%;
+    margin-top: 15px;
+    display: flex;
+	justify-content: space-between;
+    white-space: nowrap;
+    border-bottom: #C5C5C5 1px solid;  
+}
+
+.totaal{
+    font-weight: bold;
+    display: inline-block;
+}
+
+.finaleKost{
+    font-family: 'Ars_regular_Serif';
+    max-width: 60%;
+    margin-top: 15px;
+    display: flex;
+	justify-content: space-between;
+    white-space: nowrap; 
+}
+
+.budget{
+    padding: 30px;
+    background-color: #FBDEDB;
+    max-width: 60%;
+}
+
+.budgetInfo {
+    font-family: 'Ars_regular_Serif';
+    font-size: 1.2rem !important;
+    max-width: 80%;
+    margin-top: 10px;
+  }
+
+  .line{
+    max-width: 20%;
+    margin-left: 250px;
+    margin-top: 50px;
+    border: solid 1px;
+  }
+
+  .situatieTekst{
+    font-family: 'Ars_regular_Italic' !important;
+  }
+
+  .situatie{
+    max-width: 100%;
+  }
+
+  .opnieuw{
+    border-bottom: 1px solid;
+    cursor: pointer;
+  }
+
+  .linkSituatie{
+    border-bottom: 1px solid;
+  }
+
+  .button{
+    outline: none;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1440px){
+    .line {
+        margin-top: 25px !important;
+        margin-left: 25%;
+      
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .line {
+        margin-top: 25px !important;
+        margin-left: 40%;
+      
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1024px){
+    .situatie .situatieTekst{
+        max-width: 80% !important;
+        font-size: 1rem !important;
+      
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .situatie {
+        max-width: 100% !important;
+      
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1024px){
+    .budget {
+        max-width: 80% !important;
+      
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .budget {
+        max-width: 100% !important;
+      
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1024px){
+    .finaleKost {
+        max-width: 80%;
+      
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .finaleKost {
+        max-width: 100%;
+      
+    }
+  }
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .finaleKeuze {
+        max-width: 80%;
+      
+    }
+  }
+
+@media screen and (max-width: 768px) {
+    .finaleKeuze {
+        max-width: 100%;
+      
+    }
+  }
 
 @media screen and (max-width: 768px) {
   .vraagContainer {

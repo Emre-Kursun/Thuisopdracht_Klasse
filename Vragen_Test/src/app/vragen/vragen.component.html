@@ -6,18 +6,21 @@
       rond te komen. Wil jij weten hoe het voelt? Doe deze interactieve test. Verwondert het je dat hun hoofd soms niet
       naar school staat?
     </p>
-    <p class="tekst col-md-8">Stel je even voor dat je alleenstaande ouder bent van twee kinderen (4 en 8 jaar). Je hebt
+    <p *ngIf="!zijnKeuzesAf" class="tekst col-md-8">Stel je even voor dat je alleenstaande ouder bent van twee kinderen
+      (4 en 8 jaar). Je hebt
       een maandelijks inkomen van € 1400, inclusief voordelen en kindergeld. Je vaste maandelijkse kosten zijn € 840*.
     </p>
   </div>
 
-  <h1 class="titelKeuze display-5 fw-bold">Welke keuzes maak jij?</h1>
+  <h1 *ngIf="!zijnKeuzesAf" class="titelKeuze display-5 fw-bold">Welke keuzes maak jij?</h1>
+  <h1 *ngIf="zijnKeuzesAf" class="titelKeuze display-5 fw-bold">Resultaat</h1>
 
-  <section class="wrapper">
-    <div class="card-container" *ngFor="let option of questionList[currentQuestion]?.options">
-      <div [ngClass]="{'active' : (selectedItem.id == option.id)}">
-        <a (click)="setItem(option)" class="keuze1">
-          <h3>{{option.price}}</h3>
+  <section *ngIf="!zijnKeuzesAf" class="wrapper">
+    <div  class="card-container" *ngFor="let option of questionList[currentQuestion]?.options">
+      <div (keydown.arrowleft)="AddtoArray(option.text,option.price,option)" tabindex="0" (click)="AddtoArray(option.text,option.price,option);"
+        [ngClass]="{'active' : (selectedItem.id === option.id)}">
+        <a class="keuze1">
+          <h3>€ {{option.price}}</h3>
           <img src="{{option.image}}">
           <div class="keuze">
             <h6>{{option.text}}</h6>
@@ -28,21 +31,58 @@
     <!-- </div> -->
   </section>
 
-  <div class="vraagContainer">
-    <p>Vraag {{questionList[currentQuestion]?.questionText}}</p>
+  <div *ngIf="!zijnKeuzesAf" class="vraagContainer">
+    <p>Vraag {{currentQuestion+1}} of {{questionList.length}}</p>
   </div>
 
-  <div class="buttonContainer">
+  <div *ngIf="!zijnKeuzesAf" class="buttonContainer">
     <a class="positionButton">
-      <button *ngIf="questionList[currentQuestion]?.questionText !== '1/12'" (click)="previousQuestion()"
+      <button (keyup.backspace)="previousQuestion()" #btnFocus [autofocus]="btnFocus.focus()" *ngIf="questionList[currentQuestion]?.questionText !== '1/12'" (click)="previousQuestion()"
         class="button button2">Vorige</button>
     </a>
-    <button [disabled]="!selectedItem.id" *ngIf="questionList[currentQuestion]?.questionText !== '12/12'" (click)="nextQuestion()"
-      class="button button1">Volgende</button>
-    <button [disabled]="!selectedItem.id" *ngIf="questionList[currentQuestion]?.questionText == '12/12'" routerLink="/resultaat"
-      class="button button1">Bekijk het resultaat</button>
+
+    <button (keyup.enter)="nextQuestion()" #btnFocus [autofocus]="btnFocus.focus()" [disabled]="!selectedItem" *ngIf="questionList[currentQuestion]?.questionText !== '12/12'"
+      (click)="nextQuestion();" class="button button1">Volgende</button>
+
+
+    <button (keyup.enter)="endQuestion()" #btnFocus [autofocus]="btnFocus.focus()" [disabled]="!selectedItem" *ngIf="questionList[currentQuestion]?.questionText == '12/12'"
+      (click)="endQuestion()" class="button button1">Bekijk het resultaat</button>
 
     <!--  -->
   </div>
 
+  <div class="wrapperKeuze" *ngIf="zijnKeuzesAf">
+    <div class="finaleKeuze" *ngFor="let data of gekozenKeuze">
+      <p class="finaleNaam">{{ data.option }}</p>
+      <p class="finalePrijs">€ {{ data.price }}</p>
+    </div>
+
+    <div class="finaleKost">
+      <p class="totaal">Je hebt in totaal uitgegeven</p>
+      <p class="finalePrijs">€ {{finaleKost}}</p>
+    </div>
+
+    <div *ngIf="!budgetCorrect" class="budget">
+      <p class="budgetInfo inleiding col-md-8">Sorry. Je hebt € {{ budget }} te veel uitgegeven. Als je schuldenvrij wil blijven
+        moet je dus andere keuzes maken. <a (click)="resetKeuze()" class="opnieuw"> Probeer het nog eens opnieuw.</a>
+      </p>
+    </div>
+
+    <div *ngIf="budgetCorrect" class="budget">
+        <p class="budgetInfo inleiding col-md-8">Je hebt nog € {{ budget }} over, daar heb je heel wat dingen voor moeten laten die veel mensen vanzelfsprekend vinden.
+        </p>
+      </div>
+
+    <hr class="line">
+
+    <div class="situatie">
+      <p class="situatieTekst tekst col-md-8">Natuurlijk is elke situatie uniek. En is deze test simplistisch berekend. Hij is
+        gebaseerd op dingen waar een gemiddeld gezin geld aan uitgeeft en hoeveel. Het zijn dus echte keuzes die sommige
+        gezinnen moeten maken om rond te komen. <br> <br>
+
+        Hoeveel geld heb je nodig voor een menswaardig leven? Bereken het zelf op <a class="linkSituatie " href="www.menswaardiginkomen.be">www.menswaardiginkomen.be</a>
+      </p>
+    </div>
+
+  </div>
 </div>
